@@ -1,0 +1,101 @@
+#element-highlighter-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  max-height: 90vh;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  z-index: 2147483647;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: auto;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: move;
+}
+
+.popup-header span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#close-popup-btn {
+  background: transparent;
+  color: #777;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+#close-popup-btn:hover {
+  color: #333;
+}
+
+.popup-section {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.popup-section:last-child {
+  margin-bottom: 10px;
+}
+
+.popup-section h3 {
+  margin: 15px 0 8px;
+  font-size: 15px;
+  color: #007bff;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 5px;
+}
+
+.popup-section pre {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.popup-section code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.copy-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 13px;
+  transition: background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}
+
+.copy-btn:active {
+  background: #004085;
+}

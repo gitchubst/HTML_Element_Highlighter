@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Element Highlighter",
+  "version": "1.0",
+  "description": "Highlights HTML elements and shows their HTML and CSS code. Click the extension icon to start selection.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Start Element Selection"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
